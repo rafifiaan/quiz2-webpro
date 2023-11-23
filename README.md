@@ -1,4 +1,4 @@
-## Quiz 2 - Web Programming 2023
+## Quiz 2 - Web Programming (E) 2023
 
 **Authors :**
 | Name                               | Student ID |
