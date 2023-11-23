@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-GenshinCourse-20211124083829.mdf;Initial Catalog=aspnet-GenshinCourse-20211124083829;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\kuliah\\smt5\\pweb\\ASP\\GenshinCourse\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="GenshinCourseEntities-Web.config Connection String" description="GenshinCourseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=genshincoursedbserver.database.windows.net;initial catalog=GenshinCourse;user id=SalmanAlfariq;password=Salman0351;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\kuliah\\smt5\\pweb\\ASP\\GenshinCourse\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GenshinCourseEntities']/@connectionString" />
+  </parameter>
+  <parameter name="GenshinCourse_dbEntities-Web.config Connection String" description="GenshinCourse_dbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/GenshinCourse.csdl|res://*/GenshinCourse.ssdl|res://*/GenshinCourse.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=genshincoursedbserver.database.windows.net;initial catalog=GenshinCourse_db;user id=SalmanAlfariq;password=Salman0351;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\kuliah\\smt5\\pweb\\ASP\\GenshinCourse\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GenshinCourse_dbEntities']/@connectionString" />
+  </parameter>
+</parameters>

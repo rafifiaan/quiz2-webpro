@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GenshinCourse.user>
+
+    @{
+    ViewBag.Title = "Create";
+    }
+
+    <h2>Data User</h2>
+
+    <p>
+        @if(Session["UserId"] != null)
+{
+        @Html.ActionLink("Create New", "Create")
+}else{
+}
+    </p>
+    <table class="table">
+        <tr style="background-color: #E1F4F3">
+            <th style="text-align: center;">
+                @Html.DisplayNameFor(model => model.uname)
+            </th>
+            <th style="text-align: center;">
+                @Html.DisplayNameFor(model => model.first_name)
+            </th>
+            <th style="text-align: center;">
+                @Html.DisplayNameFor(model => model.last_name)
+            </th>
+            @if(Session["UserId"] != null){
+            <th style="text-align: center;">
+                Set
+            </th>
+        }
+        </tr>
+
+        @foreach (var item in Model) {
+        <tr align="center">
+            <td>
+                @Html.DisplayFor(modelItem => item.uname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.first_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.last_name)
+            </td>
+            @if(Session["UserId"] != null){
+            <td style="text-align: center;">
+
+                <a href=@Url.Action("Edit", "Users", new { id=item.id }) class="btn btn-warning">Edit</a>
+                <a href=@Url.Action("Details", "Users", new { id=item.id }) class="btn btn-success">Details</a>
+                <a href=@Url.Action("Delete", "Users", new { id=item.id }) class="btn btn-danger">Delete</a>
+
+
+            </td>
+            }else{
+            }
+        </tr>
+}
+
+    </table>

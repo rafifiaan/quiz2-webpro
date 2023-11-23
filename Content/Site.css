@@ -1,0 +1,47 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.carding {
+    background-color: #E1F4F3 !important;
+    background-clip: content-box !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+p {
+    padding: 0 15px;
+}
+
+.resume-item {
+    background: #E1F4F3;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    height: 200px;
+    width: 100%;
+    border: 1px solid;
+}
+
+    .resume-item:hover {
+        transition: all 0.3s ease;
+        background: #ffffff;
+        transform: scale(1.05);
+    }
+        /* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
